@@ -78,6 +78,7 @@ p {
 
 h1 {
   margin: 20px 0;
+  font-family: Raleway-B;
 }
 
 
