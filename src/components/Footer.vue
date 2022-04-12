@@ -23,7 +23,7 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: Raleway-Reg;
+  font-family: Raleway;
   color: white;
   padding: 0 40px;
 }

@@ -108,7 +108,7 @@ export default {
 
 .link {
   position: absolute;
-  bottom: 10px;
+  bottom: 72px;
   right: 15px;
   width: 15px !important;
 }

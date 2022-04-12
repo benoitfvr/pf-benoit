@@ -32,7 +32,7 @@ export default {
 
 <style>
 @font-face {
-  font-family: "Raleway-Reg";
+  font-family: "Raleway";
   src: url("./assets/fonts/Raleway/Raleway-Regular.ttf");
 }
 @font-face {
