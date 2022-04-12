@@ -104,6 +104,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 520px;
 }
 
 .name {
@@ -111,6 +112,7 @@ export default {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  height: 520px;
 }
 
 .name img {
