@@ -3,9 +3,21 @@
   <section class="contact">
     <div class="intro">
       <h1>Prendre contact &#129488;</h1>
-      <a href="mailto:benoit14.favrie@gmail.com" target="_blank">
-        <Button placeholder="Me contacter par mail" />
-      </a>
+      <div class="content">
+        <div class="item linkedin">
+          <i class="el-icon-share" />
+          <a href="https://www.linkedin.com/in/beno%C3%AEt-favrie-44a37a203/">Mon LinkedIn</a>
+        </div>
+        <div class="item">
+          <a href="mailto:benoit14.favrie@gmail.com" target="_blank">
+            <Button placeholder="Me contacter par mail" />
+          </a>
+        </div>
+        <div class="item">
+          <i class="el-icon-phone" />
+          <p>06 21 44 10 26</p>
+        </div>
+      </div>
     </div>
   </section>
 </div>
@@ -35,7 +47,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../assets/images/bg.png");
+  background-color: #2F3956;
 }
 
 .contact {
@@ -47,13 +59,36 @@ export default {
 }
 
 .intro {
-  gap: 20px;
+  gap: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: white;
   font-family: Raleway-B;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 220px;
+  text-decoration: none;
+}
+
+.linkedin a {
+  font-family: Raleway-B;
+  text-decoration: underline;
 }
 
 </style>

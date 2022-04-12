@@ -5,7 +5,7 @@
       <h1>Mes Projets</h1>
       <p>Découvrez mes projets</p>
       <el-divider class="sub-title-divider"/>
-      <p style="font-style: italic;">Vous pouvez cliquer sur les fiches avec une petite icône pour découvrir mon projet en détail</p>
+      <p style="font-style: italic;">Vous pouvez cliquer sur les fiches avec une petite icône pour découvrir le projet en détail</p>
     </div>
     <div class="content">
       <div class="item">
@@ -13,16 +13,16 @@
         <a href="http://www.flow.raidghost.com/" target="_blank">
           <img class="item__image" src="@/assets/images/flow.svg" alt="Flow" />
         </a>
-        <p style="font-weight: bold;">FLOW</p>
-        <p>Nous avons réalisé Flow dans le cadre d'un projet de fin d'études pour notre formation. Je me suis occupé de la partie développement, en ajoutant quelques touches personnelles. &#128540;</p>
+        <p class="title-card">FLOW</p>
+        <p>Nous avons réalisé Flow dans le cadre d'un projet de fin d'études pour notre formation. Je me suis occupé de la partie développement web, en y ajoutant quelques touches personnelles. &#128540;</p>
       </div>
       <div class="item">
         <img class="link" src="@/assets/images/icons/link.svg">
         <a href="https://github.com/Mowdyy/sunnyoak" target="_blank">
           <img class="item__image" src="@/assets/images/sunnyOak.svg" alt="" />
         </a>
-        <p style="font-weight: bold;">SUNNYOAK</p>
-        <p>Nous avons réalisé SunnyOak comme un projet personnel, le but était de créer une lampe de A à Z, et qui peut être gérée par une application que j'ai créée en JS. &#128523;</p>
+        <p class="title-card">SUNNYOAK</p>
+        <p>Nous avons réalisé SunnyOak en tant que projet personnel, le but était de créer une lampe de A à Z, et qui peut être gérée par une application web que j'ai créée en HTML, CSS et JS. &#128523;</p>
       </div>
     </div>
   </section>
@@ -84,8 +84,8 @@ export default {
   text-align: justify;
   height: 500px;
   max-width: 300px;
-  background-color: #384772;
-  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.925);
+  border-radius: 4px;
   position: relative;
   gap: 10px;
 }
@@ -96,14 +96,20 @@ export default {
 }
 
 .item p{
-  color: white;
+  color: black;
   padding: 0 20px;
+  text-align: center;
 }
 
 .item img{
   width: 300px;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 4px;
+}
+
+.title-card {
+  color:#694CD4 !important;
+  font-weight: bold;
 }
 
 .link {

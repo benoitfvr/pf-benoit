@@ -4,7 +4,9 @@
     <div class="content">
       <h1>À propos de moi</h1>
       <p>Tout ce que vous avez besoin de savoir sur moi est ici &#128521;</p>
-      <Button placeholder="Télécharger mon CV" />
+      <a href="../assets/cv_benoit_favrie.pdf" download>
+        <Button placeholder="Télécharger mon CV" />
+      </a>
     </div>
   </section>
   <section class="skills">
@@ -41,7 +43,7 @@
           <el-divider class="sub-title-divider"/>
         </div>
         <div>
-          <p>Ce n'est pas le domaine que je domine, mais les bases que j'ai acquises en communication, me permettent d'être polyvalent et de comprendre les demandes de personnes avec qui je travaille. Le référencement Web est très important.</p>
+          <p>Ce n'est pas le domaine que je domine, mais les bases que j'ai acquises en communication me permettent d'être polyvalent et de comprendre les demandes des personnes avec qui je travaille. Le référencement Web est très important.</p>
         </div>
       </el-card>
     </div>

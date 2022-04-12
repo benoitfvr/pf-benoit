@@ -15,8 +15,8 @@
         <div class="intro">
           <p><b>INTRODUCTION</b></p>
           <h1 class="job">Front-End | Back-End Developer</h1>
-          <el-divider class="sub-title-divider" />
           <p>Je suis en alternance à Caen en développement web. Je suis accepté à l'HETIC De Paris, et je souhaiterais intégrer une nouvelle entreprise pour la rentrée 2022.</p>
+          <p class="github">Accès à mon Github : <a href="https://github.com/Mowdyy" target="_blank">Github/Mowdyy</a></p>
           <div class="block-radio">
             <el-timeline reverse>
               <el-timeline-item
@@ -104,7 +104,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 520px;
+  height: 500px;
 }
 
 .name {
@@ -116,12 +116,12 @@ export default {
 }
 
 .name img {
-  width: 200px;
+  width: 250px;
   border-radius: 50%;
 }
 
 h1 {
-  font-size: 4vh;
+  font-size: 3.8vh;
   font-family: Raleway-B;
 }
 
@@ -141,13 +141,25 @@ h1 {
   width: 20vw;
 }
 
+.github {
+  margin: 30px 0;
+}
+
+.github a {
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .block-radio {
   max-width: 300px;
-  margin-top: 40px;
 }
 
 .el-timeline-item p {
   color: white !important;
+}
+
+.el-timeline-item {
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1100px) {

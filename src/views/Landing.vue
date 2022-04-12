@@ -2,11 +2,11 @@
   <div class="landing">
     <transition name="fade" mode="out-in">
       <div class="welcome-content">
-        <p>Bienvenue, Je suis</p>
+        <p>Bienvenue, je suis</p>
         <h1>Benoît Favrie</h1>
         <router-link to="/home">
           <div class="button">
-            <Button placeholder="See my Portfolio"/>
+            <Button placeholder="Voir mon Portfolio"/>
           </div>
         </router-link>
         <p class="intel">Veuillez noter que ce site est encore en cours de développement...</p>
