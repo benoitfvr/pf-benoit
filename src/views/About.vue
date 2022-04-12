@@ -4,7 +4,7 @@
     <div class="content">
       <h1>À propos de moi</h1>
       <p>Tout ce que vous avez besoin de savoir sur moi est ici &#128521;</p>
-      <a href="../../assets/cv_benoit_favrie.pdf" download>
+      <a href="../img/cv_benoit_favrie.pdf" download>
         <Button placeholder="Télécharger mon CV" />
       </a>
     </div>
