@@ -20,7 +20,7 @@ button {
   display: block;
   margin: 0 !important;
   padding: 12px 20px;
-  font-family: Raleway-EB;
+  font-family: Raleway-B;
   letter-spacing: 1px;
   color: white;
   border: 2px #694CD4 solid;

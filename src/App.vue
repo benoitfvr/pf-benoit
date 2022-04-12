@@ -36,8 +36,8 @@ export default {
   src: url("./assets/fonts/Raleway/Raleway-Regular.ttf");
 }
 @font-face {
-  font-family: "Raleway-EB";
-  src: url("./assets/fonts/Raleway/Raleway-ExtraBold.ttf");
+  font-family: "Raleway-B";
+  src: url("./assets/fonts/Raleway/Raleway-SemiBold.ttf");
 }
 
 body {

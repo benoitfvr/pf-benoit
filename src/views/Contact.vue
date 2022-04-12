@@ -53,7 +53,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   color: white;
-  font-family: Raleway;
+  font-family: Raleway-B;
 }
 
 </style>

@@ -120,6 +120,7 @@ export default {
 
 h1 {
   font-size: 4vh;
+  font-family: Raleway-B;
 }
 
 .job {

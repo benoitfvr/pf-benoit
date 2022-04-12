@@ -113,6 +113,10 @@ p {
   padding: 0 20px;
 }
 
+h1 {
+  font-family: Raleway-B;
+}
+
 .box-card p {
   padding: 0;
 }

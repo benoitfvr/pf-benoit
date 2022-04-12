@@ -73,6 +73,7 @@ body, html {
 
 p {
   margin: 0;
+  text-align: center;
 }
 
 h1 {

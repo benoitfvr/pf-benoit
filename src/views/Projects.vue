@@ -125,6 +125,10 @@ export default {
   height: 280px;
 }
 
+h1 {
+  font-family: Raleway-B;
+}
+
 .infos {
   display: flex;
 }
