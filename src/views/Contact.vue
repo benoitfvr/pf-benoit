@@ -91,4 +91,11 @@ export default {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 </style>
