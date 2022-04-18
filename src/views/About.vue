@@ -132,9 +132,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-family: Raleway;
   min-height: 70vh;
-  padding-top: 50px;
+  padding: 50px 30px 0;
 }
 
 .content-skills {
