@@ -1,14 +1,5 @@
 <template>
 <div class="main">
-  <section class="about">
-    <div class="content">
-      <h1>À propos de moi</h1>
-      <p>Tout ce que vous avez besoin de savoir sur moi est ici &#128521;</p>
-      <a href="../img/cv_benoit_favrie.pdf" download>
-        <Button placeholder="Télécharger mon CV" />
-      </a>
-    </div>
-  </section>
   <section class="skills">
     <div class="title-items">
       <h1>Ce pour quoi je suis doué</h1>
@@ -48,6 +39,14 @@
       </el-card>
     </div>
   </section>
+  <section class="about">
+    <div class="content">
+      <p>Tout ce que vous avez besoin de savoir sur moi est ici &#128521;</p>
+      <a href="../img/cv_benoit_favrie.pdf" download>
+        <Button placeholder="Télécharger mon CV" />
+      </a>
+    </div>
+  </section>
 </div>
 </template>
 
@@ -75,17 +74,20 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(56,71,114);
+  background-color: var(--third-color);
 }
 
 .titles-card {
-  color:#694CD4;
+  color: var(--title-color);
   font-weight: 800;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  font-family: Raleway-EB;
+  letter-spacing: 1px;
+  font-size: 1.2em;
 }
 
 .titles-card img {
@@ -98,6 +100,7 @@ export default {
   align-items: center;
   min-height: 30vh;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .content, .title-items {
@@ -106,7 +109,7 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: var(--white-color);
   font-family: Raleway;
 }
 
@@ -116,7 +119,8 @@ p {
 }
 
 h1 {
-  font-family: Raleway-B;
+  font-family: Raleway-EB;
+  font-size: 2em;
 }
 
 .box-card p {
@@ -126,12 +130,12 @@ h1 {
 .skills {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-family: Raleway;
   min-height: 70vh;
-  padding-bottom: 50px;
+  padding-top: 50px;
 }
-
 
 .content-skills {
   display: flex;
@@ -148,12 +152,9 @@ h1 {
 }
 
 .el-card {
-  height: 300px;
+  height: 350px;
   width: 300px;
-}
-
-.el-card__body {
-  padding: 0 !important;
+  padding: 10px;
 }
 
 .sub-title-divider {
@@ -166,16 +167,5 @@ h1 {
   margin: 10px;
   text-align: center;
 }
-
-/* img {
-  width: 120%;
-  height: 120%;
-  border-radius: 100%;
-} */
-
-@media screen and (min-width: 1090px) {
-
-}
-
 
 </style>

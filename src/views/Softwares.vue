@@ -1,0 +1,107 @@
+<template>
+  <section class="softwares">
+    <div class="icons">
+      <div>
+        <img src="../assets/images/icons/git.png" alt="">
+      </div>
+      <div>
+        <img src="../assets/images/icons/html.png" alt="">
+      </div>
+      <div>
+        <img src="../assets/images/icons/vue.png" alt="">
+      </div>
+      <div>
+        <img src="../assets/images/icons/node.png" alt="">
+      </div>
+      <div>
+        <img src="../assets/images/icons/vs.png" alt="">
+      </div>
+      <div>
+        <img src="../assets/images/icons/css.png" alt="">
+      </div>
+      <div>
+        <img src="../assets/images/icons/js.png" alt="">
+      </div>
+      <div>
+        <img src="../assets/images/icons/npm.png" alt="">
+      </div>
+    </div>
+    <div class="title">
+      <h1>Les <span class="important">logiciels</span> et <span class="important">technologies</span> que j'utilise &#129488;</h1>
+    </div>
+  </section>
+</template>
+
+<script>
+
+import Button from '@/components/Button.vue'
+
+export default {
+  name: 'Softwares',
+  components: {
+    Button
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.softwares {
+  height: 45vh;
+  background: var(--background-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  width: 40vw;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  padding: 50px;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-family: Raleway-B;
+  color: var(--text-color);
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  width: 100%;
+}
+
+.icons div {
+  border-right: 2px solid var(--third-color);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icons div {
+    padding: 10px 0;
+  }
+
+  .title {
+  display: none;
+}
+}
+
+</style>

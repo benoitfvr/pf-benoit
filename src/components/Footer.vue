@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p>version: 0.5</p>
+    <p>version: 0.6</p>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
   justify-content: flex-start;
   align-items: center;
   font-family: Raleway;
-  color: white;
+  color: var(--text-color);
   padding: 0 40px;
 }
 

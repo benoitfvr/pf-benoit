@@ -47,7 +47,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2F3956;
+  background-color: var(--background-color);
+  border-top: 2px solid var(--second-color);
 }
 
 .contact {
@@ -64,7 +65,7 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: var(--white-color);
   font-family: Raleway-B;
 }
 

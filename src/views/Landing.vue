@@ -46,8 +46,8 @@ body, html {
   width: 100vw;
   height: 100vh;
   font-family: Raleway;
-  background-color: #3F5288;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .fade-enter-active,
@@ -78,7 +78,7 @@ p {
 
 h1 {
   margin: 20px 0;
-  font-family: Raleway-B;
+  font-family: Raleway-EB;
 }
 
 

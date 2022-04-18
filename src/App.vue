@@ -39,10 +39,28 @@ export default {
   font-family: "Raleway-B";
   src: url("./assets/fonts/Raleway/Raleway-SemiBold.ttf");
 }
+@font-face {
+  font-family: "Raleway-EB";
+  src: url("./assets/fonts/Raleway/Raleway-Black.ttf");
+}
+
+:root {
+  --background-color: #363636;
+  --second-color: #FF8751;
+  --third-color: #2F2F2F;
+  --white-color: #EBEBEB;
+  --text-color: #EBEBEB;
+  --text-card-color: #000;
+  --title-color: #FF8751;
+}
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.important {
+  color: var(--second-color);
 }
 
 .fade-enter-active,
@@ -67,7 +85,7 @@ body {
 
 a {
   font-family: Raleway-Reg;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 16px;
   margin: 0 40px;
@@ -77,11 +95,11 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  color: white;
+  color: var(--text-color);
 }
 
 .items:hover {
-  color: #694CD4;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 900px) {

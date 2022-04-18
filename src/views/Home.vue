@@ -2,36 +2,23 @@
   <div class="main">
     <section class="home">
       <div class="home-container">
-        <img class="logo" src="@/assets/images/logo.png">
+        <img class="logo" src="@/assets/images/logo.svg">
         <div class="name">
-          <h1>Benoît Favrie</h1>
-          <p>Voici mon Portfolio</p>
           <img src="@/assets/images/profil.svg">
-          <el-divider class="sub-title-divider" />
+        </div>
+        <div class="intro">
+          <p class="subtitle">INTRODUCTION</p>
+          <h1 class="job important">Front-End | Back-End Developer</h1>
+          <p class="desc">Je suis en alternance à Caen en développement web. Je suis accepté à l'HETIC De Paris, et je souhaiterais intégrer une nouvelle entreprise pour la rentrée 2022.</p>
+          <p class="github">Accès à mon Github : <a href="https://github.com/Mowdyy" target="_blank">Github/Mowdyy</a></p>
           <a href="mailto:benoit14.favrie@gmail.com" target="_blank">
             <Button placeholder="Me contacter" />
           </a>
         </div>
-        <div class="intro">
-          <p><b>INTRODUCTION</b></p>
-          <h1 class="job">Front-End | Back-End Developer</h1>
-          <p>Je suis en alternance à Caen en développement web. Je suis accepté à l'HETIC De Paris, et je souhaiterais intégrer une nouvelle entreprise pour la rentrée 2022.</p>
-          <p class="github">Accès à mon Github : <a href="https://github.com/Mowdyy" target="_blank">Github/Mowdyy</a></p>
-          <div class="block-radio">
-            <el-timeline reverse>
-              <el-timeline-item
-                v-for="(activity, index) in activities"
-                :key="index"
-                :timestamp="activity.timestamp"
-              >
-                <p>{{activity.content}}</p>
-              </el-timeline-item>
-            </el-timeline>
-          </div>
-        </div>
       </div>
     </section>
     <About />
+    <Softwares />
     <Projects />
     <Contact />
   </div>
@@ -41,6 +28,7 @@
 import About from '@/views/About.vue';
 import Projects from '@/views/Projects.vue';
 import Contact from '@/views/Contact.vue';
+import Softwares from '@/views/Softwares.vue';
 
 import Button from '@/components/Button.vue';
 
@@ -50,22 +38,9 @@ export default {
     About,
     Projects,
     Button,
-    Contact
-  },
-  data() {
-      return {
-        activities: [{
-          content: "Baccalauréat S - Sciences de L'ingénieur",
-          timestamp: '2020'
-        }, {
-          content: "DUT - Métiers du Multimédia et de l'Internet",
-          timestamp: '2020-2022'
-        }, {
-          content: 'Admis à HETIC de Paris',
-          timestamp: '2022'
-        }]
-      };
-    }
+    Contact,
+    Softwares
+  }
 }
 </script>
 
@@ -78,8 +53,7 @@ export default {
 }
 
 .home {
-  background: no-repeat url("../assets/images/bg.png");
-  background-color: #2F3956;
+  background-color: var(--background-color);
 }
 
 .logo {
@@ -90,43 +64,53 @@ export default {
 }
 
 .home-container {
-  color: white;
+  color: var(--text-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  gap: 300px;
-  margin: 0 50px;
+  gap: 200px;
+  padding: 0 20px;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
   height: 500px;
 }
 
 .name {
+  height: 500px;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: center;
   align-items: center;
-  height: 520px;
 }
 
 .name img {
-  width: 250px;
+  width: 90%;
   border-radius: 50%;
 }
 
 h1 {
   font-size: 3.8vh;
+  font-family: Raleway-EB;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  opacity: 0.7;
   font-family: Raleway-B;
 }
 
+.desc {
+  line-height: 1.5em;
+}
+
 .job {
-  color: #694CD4;
+  color: var(--text-color);
 }
 
 .home-container div {
@@ -150,42 +134,30 @@ h1 {
   text-decoration: underline;
 }
 
-.block-radio {
-  max-width: 300px;
-}
-
-.el-timeline-item p {
-  color: white !important;
-}
-
-.el-timeline-item {
-  padding-bottom: 20px;
-}
-
 @media screen and (max-width: 1100px) {
-  .home-container {
-    padding: 200px 0;
-    gap: 200px;
-  }
-}
-
-@media screen and (min-width: 1100px) and (max-width: 1320px) {
-  .home-container {
-    padding: 200px 100px;
-    gap: 200px;
-  }
-}
-
-@media screen and (min-width: 1321px) and (max-width: 1420px) {
-  .home-container {
-    padding: 0;
-    gap: 200px;
-  }
-}
-
-@media screen and (max-width: 800px) {
   h1 {
     text-align: center;
+  }
+
+  .home-container {
+    padding: 100px 20px;
+    gap: 20px;
+  }
+
+  .name {
+    height: auto;
+    padding: 0 50px;
+  }
+
+  .intro {
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .name img {
+    width: 100%;
+    border-radius: 8px;
   }
 }
 

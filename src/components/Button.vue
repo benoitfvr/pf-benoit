@@ -20,10 +20,10 @@ button {
   display: block;
   margin: 0 !important;
   padding: 12px 20px;
-  font-family: Raleway-B;
+  font-family: Raleway-EB;
   letter-spacing: 1px;
-  color: white;
-  border: 2px #694CD4 solid;
+  color: var(--second-color);
+  border: 2px solid var(--second-color);
   border-radius: 4px;
   text-transform: uppercase;
   outline: 0;
@@ -42,7 +42,7 @@ button {
 .fill:before {
   content: "";
   position: absolute;
-  background: #694CD4;
+  background: var(--second-color);
   bottom: 0;
   left: 0;
   right: 0;
@@ -54,5 +54,9 @@ button {
 
 .fill:hover:before {
   top: 0;
+}
+
+.fill:hover {
+  color: var(--white-color)
 }
 </style>

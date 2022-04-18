@@ -3,9 +3,9 @@
   <section class="projects">
     <div class="title-items">
       <h1>Mes Projets</h1>
-      <p>Découvrez mes projets</p>
+      <p>Découvrez mes projets personnels</p>
       <el-divider class="sub-title-divider"/>
-      <p style="font-style: italic;">Vous pouvez cliquer sur les fiches avec une petite icône pour découvrir le projet en détail</p>
+      <p>Vous pouvez cliquer sur les fiches avec une petite icône pour découvrir le projet en détail</p>
     </div>
     <div class="content">
       <div class="item">
@@ -19,7 +19,7 @@
       <div class="item">
         <img class="link" src="@/assets/images/icons/link.svg">
         <a href="https://github.com/Mowdyy/sunnyoak" target="_blank">
-          <img class="item__image" src="@/assets/images/sunnyOak.svg" alt="" />
+          <img class="item__image" src="@/assets/images/sunnyOak.svg" alt="SunnyOak" />
         </a>
         <p class="title-card">SUNNYOAK</p>
         <p>Nous avons réalisé SunnyOak en tant que projet personnel, le but était de créer une lampe de A à Z, et qui peut être gérée par une application web que j'ai créée en HTML, CSS et JS. &#128523;</p>
@@ -53,7 +53,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(63,82,136);
+  background: var(--third-color);
 }
 
 .projects {
@@ -84,7 +84,7 @@ export default {
   text-align: justify;
   height: 500px;
   max-width: 300px;
-  background-color: rgba(255, 255, 255, 0.925);
+  background-color: var(--white-color);
   border-radius: 4px;
   position: relative;
   gap: 10px;
@@ -95,21 +95,22 @@ export default {
   transition: all 0.2s linear;
 }
 
-.item p{
-  color: black;
+.item p {
+  color: var(--text-card-color);
   padding: 0 20px;
   text-align: center;
 }
 
-.item img{
+.item img {
   width: 300px;
   height: 300px;
   border-radius: 4px;
 }
 
 .title-card {
-  color:#694CD4 !important;
-  font-weight: bold;
+  color: var(--title-color) !important;
+  font-family: Raleway-EB;
+  font-size: 1.3em;
 }
 
 .link {
@@ -125,14 +126,16 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: var(--text-color);
   gap: 10px;
   padding: 0 20px;
   height: 280px;
 }
 
 h1 {
-  font-family: Raleway-B;
+  font-family: Raleway-EB;
+  font-size: 2em;
+  letter-spacing: 1px;
 }
 
 .infos {
