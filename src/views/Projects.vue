@@ -1,13 +1,13 @@
 <template>
 <div class="main">
   <section class="projects">
-    <div class="title-items">
+    <div data-aos="fade-up" class="title-items">
       <h1>Mes Projets</h1>
       <p>Découvrez mes projets personnels</p>
       <el-divider class="sub-title-divider"/>
       <p>Vous pouvez cliquer sur les fiches avec une petite icône pour découvrir le projet en détail</p>
     </div>
-    <div class="content">
+    <div data-aos="fade-up" class="content">
       <div class="item">
         <img class="link" src="@/assets/images/icons/link.svg">
         <a href="http://www.flow.raidghost.com/" target="_blank">

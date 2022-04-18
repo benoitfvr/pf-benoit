@@ -1,6 +1,6 @@
 <template>
   <section class="softwares">
-    <div class="icons">
+    <div data-aos="fade" data-aos-dealy="400" class="icons">
       <div>
         <img src="../assets/images/icons/git.png" alt="">
       </div>

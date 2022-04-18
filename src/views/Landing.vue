@@ -1,7 +1,7 @@
 <template>
-  <div class="landing">
+  <div class="landing" >
     <transition name="fade" mode="out-in">
-      <div class="welcome-content">
+      <div data-aos="fade" class="welcome-content">
         <p>Bienvenue, je suis</p>
         <h1>Benoît Favrie</h1>
         <router-link to="/home">

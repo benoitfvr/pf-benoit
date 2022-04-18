@@ -3,10 +3,10 @@
     <section class="home">
       <div class="home-container">
         <img class="logo" src="@/assets/images/logo.svg">
-        <div class="name">
+        <div data-aos="fade-up" class="name">
           <img src="@/assets/images/profil.svg">
         </div>
-        <div class="intro">
+        <div data-aos="fade-up" class="intro">
           <p class="subtitle">INTRODUCTION</p>
           <h1 class="job important">Front-End | Back-End Developer</h1>
           <p class="desc">Je suis en alternance à Caen en développement web. Je suis accepté à l'HETIC De Paris, et je souhaiterais intégrer une nouvelle entreprise pour la rentrée 2022.</p>

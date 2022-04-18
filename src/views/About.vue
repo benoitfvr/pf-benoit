@@ -1,12 +1,12 @@
 <template>
 <div class="main">
   <section class="skills">
-    <div class="title-items">
+    <div data-aos="fade-up" class="title-items">
       <h1>Ce pour quoi je suis doué</h1>
       <p>Voici les différentes compétences acquises au cours de mes années de formation, et mes quelques projets personnels.</p>
       <el-divider class="sub-title-divider"/>
     </div>
-    <div class="content-skills">
+    <div data-aos="fade-up" class="content-skills">
       <el-card class="box-card">
         <div class="titles-card">
           <img src="@/assets/images/icons/code.svg" alt="">
@@ -40,7 +40,7 @@
     </div>
   </section>
   <section class="about">
-    <div class="content">
+    <div data-aos="fade" data-aos-delay="100" class="content">
       <p>Tout ce que vous avez besoin de savoir sur moi est ici &#128521;</p>
       <a href="../img/cv_benoit_favrie.pdf" download>
         <Button placeholder="Télécharger mon CV" />

@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p>version: 0.61</p>
+    <p>version: 0.7</p>
   </div>
 </template>
 
