@@ -42,7 +42,7 @@
   <section class="about">
     <div data-aos="fade" data-aos-delay="100" class="content">
       <p>Tout ce que vous avez besoin de savoir sur moi est ici &#128521;</p>
-      <a :href="`${publicPath}cv_benoit_favrie.pdf`" download>
+      <a :href="`${publicPath}cv_benoit_favrie.pdf`" target="_blank">
         <Button placeholder="Télécharger mon CV" />
       </a>
     </div>

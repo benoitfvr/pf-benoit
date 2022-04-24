@@ -2,28 +2,28 @@
   <section class="softwares">
     <div data-aos="fade" data-aos-dealy="400" class="icons">
       <div>
-        <img src="../assets/images/icons/git.png" alt="">
+        <img src="../assets/images/icons/git.svg" alt="">
       </div>
       <div>
-        <img src="../assets/images/icons/html.png" alt="">
+        <img src="../assets/images/icons/html.svg" alt="">
       </div>
       <div>
-        <img src="../assets/images/icons/vue.png" alt="">
+        <img src="../assets/images/icons/vue.svg" alt="">
       </div>
       <div>
-        <img src="../assets/images/icons/node.png" alt="">
+        <img src="../assets/images/icons/node.svg" alt="">
       </div>
       <div>
-        <img src="../assets/images/icons/vs.png" alt="">
+        <img src="../assets/images/icons/vs.svg" alt="">
       </div>
       <div>
-        <img src="../assets/images/icons/css.png" alt="">
+        <img src="../assets/images/icons/css.svg" alt="">
       </div>
       <div>
-        <img src="../assets/images/icons/js.png" alt="">
+        <img src="../assets/images/icons/js.svg" alt="">
       </div>
       <div>
-        <img src="../assets/images/icons/npm.png" alt="">
+        <img src="../assets/images/icons/scss.svg" alt="">
       </div>
     </div>
     <div class="title">
@@ -88,6 +88,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icons img {
+  max-width: 70px;
+  max-height: 70px;
 }
 
 @media screen and (max-width: 1100px) {
